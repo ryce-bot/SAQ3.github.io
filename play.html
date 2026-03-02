@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Telephone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="play.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    </head>
+    <body>
+        <!-- <div class="settingBox">
+        <h1>Telephone - Play</h1>
+        </div> -->
+        <div id="openEyes">
+            <video autoplay muted id="wakeUp">
+                <source src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/files/addons/Wake%20up%20eyes.mp4" type="video/mp4">
+            </video>
+            <video muted id="openEye">
+                <source src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/files/addons/intro.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="buttonContainer">
+            <button id="bed-button">                
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/bed.png" alt="bed" width="840" height="850">
+            </button>
+            <button id="clock-button">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/clock.png" alt="clock" width="600" height="650">
+            </button>
+            <button id="cabinet-button">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/cabinet.png" alt="cabinet" width="390" height="400">
+            </button>
+            <button id="table-button">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/table.png" alt="table" width="890" height="650">
+            </button>
+            <button id="telephone-button">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/telephone.png" alt="telephone" width="550" height="550">
+            </button>
+            <button id="lockbox-button">                
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/lock-box.png" alt="lockbox" width="400" height="400">
+            </button>
+            <button id="calendar-button">                
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/calendar.png" alt="calendar" width="640" height="590">
+            </button>
+        </div>
+        <div id="WakeupDialog">
+            <h3 id="wakeupD1">What happened? Where am I? What is this place? How did I get here?</h3>
+            <h3 id="wakeupD2">This place looks like it came from a horror movie. Ugh…</h3>
+            <h3 id="wakeupD3">Come on, don't get distracted. I need to get out of here somehow</h3>
+        </div>
+        <div id="cPop">
+            <div id="clockPopUp">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/CLOCKZOOM.png" alt="clock" width="700" height="750">
+            </div>
+            <div id="calendarPopUp">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/calendarwnote.png" alt="calendar" width="840" height="790">
+            </div>
+            <button id="back-button">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/BackBtn.png" alt="back" width="400" height="200">
+            </button>
+            <div id="notePopUp">
+                <img src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/refs/heads/files/addons/note.png" alt="note" width="900" height="800">
+            </div>
+            <div id="PopUpDialog">
+                <h3 id="clckD">It seems like this clock is broken. The hands are stuck in their place.</h3>
+                <h3 id="lbD">This box is locked. It looks like the code for the lock needs four digits.</h3>
+                <h3 id="phD">Looks like the number is invalid. Chekc the lockbox for a working one.</h3>
+            </div>
+
+            <div id="lockBoxPopUp">
+                <div id="lock-wrapper">
+                    <div class="welcome-message">You did it!</div>
+                    <div class="lock-dial" id="dial-one">
+                        <ul data-combo-num="0">
+                            <li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li>
+                        </ul>
+                    </div>
+                    <div class="lock-dial" id="dial-two">
+                        <ul data-combo-num="0">
+                            <li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li>
+                        </ul>
+                    </div>
+                    <div class="lock-dial" id="dial-three">
+                        <ul data-combo-num="0">
+                            <li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li>
+                        </ul>
+                    </div>
+                    <div class="lock-dial" id="dial-four">
+                        <ul data-combo-num="0">
+                            <li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>0</li><li>1</li><li>2</li><li>3</li><li>4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="phonePopUp">
+            <div id="numOutput">
+                <h2 id="numOutputText"></h2>
+            </div>
+            <div id="numBoxP">
+                <button onclick="press1()">1</button>
+                <button onclick="press2()">2</button>
+                <button onclick="press3()">3</button>
+                <button onclick="press4()">4</button>
+                <button onclick="press5()">5</button>
+                <button onclick="press6()">6</button>
+                <button onclick="press7()">7</button>
+                <button onclick="press8()">8</button>
+                <button onclick="press9()">9</button>
+                <button onclick="press0()">0</button>
+            </div>
+            <div id="otherBtnPhone">
+                <button onclick="pressClear()">CLEAR</button>
+                <button onclick="checkNum()">CALL</button>
+            </div>
+        </div>
+        <div id="EndVids">
+            <video muted id="endVid1">
+                <source src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/files/addons/End%20vid%201.mp4" type="video/mp4">
+            </video>
+            <video muted id="endVid2">
+                <source src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/files/addons/End%20vid%202.mp4" type="video/mp4">
+            </video>
+             <video muted id="endVid3">
+                <source src="https://raw.githubusercontent.com/ryce-bot/SAQ3.github.io/files/addons/End%20vid%203.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        
+        <script src="play.js"></script>
+    </body>
+</html>

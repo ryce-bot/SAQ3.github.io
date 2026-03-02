@@ -1,0 +1,379 @@
+.fade-out {
+    animation: fadeOut 5s ease forwards; 
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+#openEyes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    max-width:1920px;
+    height:1080px;
+  }
+  .gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }    
+  #bed-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    margin-top: 692px;
+    margin-left:445px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #table-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    margin-top: 692px;
+    margin-left: 1155px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #cabinet-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    margin-top: 750px;
+    margin-left: 1300px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #calendar-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    margin-top: 465px;
+    margin-left: 1775px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #telephone-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    margin-top: 545px;
+    margin-left: 1015px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #lockbox-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    width: 170px;
+    height: 130px;
+    margin-top: 450px;
+    margin-left: 1105px;
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #clock-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    margin-top: 270px;
+    margin-left: 1600px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #cPop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  #clockPopUp {
+    margin-left: 650px;
+    z-index: 3;
+  }
+  #calendarPopUp {
+    margin-left: 600px;
+    z-index: 3;
+  }
+  #back-button {
+    position: absolute;
+    margin-top: -100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #notePopUp {
+    margin-left: 600px;
+    z-index: 4;
+  }
+  #WakeupDialog {
+    position: fixed;
+    bottom: 60px;
+    width: 60%;
+    margin-left: 400px;
+    padding: 20px 30px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius:20px;
+    z-index:10;
+    display: none;
+    opacity: 0;
+  }
+  #WakeupDialog h3{
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+  }
+  #PopUpDialog {
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    font-size: 24px;
+    position: fixed;
+    bottom: 60px;
+    width: 60%;
+    margin-left: 400px;
+    padding: 20px 30px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius:20px;
+    z-index:10;
+    display: none;
+    opacity: 0;
+  }
+  #clckD{
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+  }
+  #back-button {
+    position: absolute;
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .lock-message {
+    text-align: center;
+    font-family: "Shadows Into Light", cursive; 
+    font-size: 24px;                  
+    color: #393939;               
+    margin-bottom: 15px;  
+    margin-right: 10px;
+    margin-left: 10px;            
+  }
+  
+
+#lock-plate{
+	padding: 30px 0;
+	border: 1px solid #cfd3d6;
+	background: #ccc;
+	text-align: center;
+	width: 486px;
+	background: -webkit-linear-gradient(top, #eee 0%,#949ba0 100%);
+	background: linear-gradient(to bottom, #eee 0%,#949ba0 100%);
+	border-radius: 4px;
+	margin: 50px auto;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+	position: relative;
+}
+
+#lock-plate span{
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.6), inset 0 -1px 0 rgba(255, 255, 255, 0.8);
+	background: #bdc1c4;
+}
+
+#lock-plate span:first-child{
+	top: 9px;
+	left: 9px;
+}
+
+#lock-plate span:nth-child(2){
+	top: 9px;
+	right: 9px;
+}
+
+#lock-plate span:nth-child(3){
+	bottom: 9px;
+	left: 9px;
+}
+
+#lock-plate span:nth-child(4){
+	bottom: 9px;
+	right: 9px;
+}
+
+#lock-wrapper{
+	width: 350px;
+	padding: 0 20px 0 8px;
+	border-radius: 7px;
+	height: 120px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+	background: -webkit-linear-gradient(top, #c4c4c4 0%,#676767 100%);
+	background: linear-gradient(to bottom, #c4c4c4 0%,#676767 100%);
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.welcome-message{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 90px;
+	width: 400px;
+	margin-top: -45px;
+	margin-left: -130px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #FFF;
+  font-family: 'Gloria Hallelujah', cursive;
+	display: none;
+}
+
+.lock-dial{
+	height: 120px;
+	width: 68px;
+	margin-left: 15px;
+	background: -webkit-linear-gradient(top, #8c9093 0%,#b6babd 9%,#ccd2d6 18%,#ffffff 55%,#ccd2d6 82%,#b6babd 91%,#8c9093 100%);
+	background: linear-gradient(to bottom, #8c9093 0%,#b6babd 9%,#ccd2d6 18%,#ffffff 55%,#ccd2d6 82%,#b6babd 91%,#8c9093 100%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	float: left;
+	position: relative;
+	cursor: move;
+}
+
+#lock-wrapper .lock-dial ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	font-size: 53px;
+	line-height: 70px;
+	color: #414f6b;
+	text-shadow: 0 -2px 0 #212c42;
+	-ms-user-select: none;
+	-webkit-user-select: none;  
+	-moz-user-select: none;     
+	user-select: none;
+	-webkit-transition: box-shadow .45s linear, color .25s linear;
+	transition: box-shadow .45s linear, color .25s linear;
+}
+
+#lock-wrapper.unlocked .lock-dial ul{
+	color: green;
+	text-shadow: 0 0 5px #3f3;
+}
+#lockBoxPopUp{
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:5;
+}
+
+#endVid1, #endVid2, #endVid3 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+#phonePopUp{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:6;
+  background-color: rgba(37, 37, 37, 0);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#numBoxP{
+  display:grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+#numBoxP button, #otherBtnPhone button{
+  font-size: 24px;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+}
+#otherBtnPhone button{
+  margin-top: 15px;
+}
+#numOutputText{
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
